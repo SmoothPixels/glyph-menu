@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Jean Alvarado",
   "license": "MIT",
-  "description": "A pickable Nerd Font mark for the Omarchy menu launcher button, with 40+ built-in glyphs or any custom text.",
+  "description": "A pickable Nerd Font mark for the Omarchy menu launcher button, with 140+ built-in glyphs or any custom text.",
   "kinds": [
     "bar-widget"
   ],
