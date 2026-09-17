@@ -5,7 +5,7 @@ import "Glyphs.js" as Glyphs
 
 BarWidget {
   id: root
-  moduleName: "io.github.SmoothPixels.glyph-menu"
+  moduleName: "io.github.smoothpixels.glyph-menu"
 
   readonly property string markId: setting("mark", "arch")
   readonly property var markEntry: Glyphs.findGlyph(markId)

@@ -16,7 +16,7 @@ const path = require("path")
 const root = path.join(__dirname, "..")
 const { glyphs } = require(path.join(root, "Glyphs.js"))
 
-const PLUGIN_ID = "io.github.SmoothPixels.glyph-menu"
+const PLUGIN_ID = "io.github.smoothpixels.glyph-menu"
 const PLUGIN_DIR = `$HOME/.config/omarchy/plugins/${PLUGIN_ID}`
 const CURRENT_MARK = `${PLUGIN_DIR}/tools/current-mark.sh`
 

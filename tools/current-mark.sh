@@ -1,5 +1,5 @@
 #!/bin/bash
-# Prints the current "mark" setting for io.github.SmoothPixels.glyph-menu.
+# Prints the current "mark" setting for io.github.smoothpixels.glyph-menu.
 # Used by the Style > Menu Bar > Glyph Mark menu rows (see
 # extensions/omarchy-menu.snippet.jsonc) to show a checkmark next to the
 # active choice.
@@ -10,7 +10,7 @@ find_mark() {
   [[ -f $file ]] || return 1
   jq -r '
     [.bar.layout.left[]?, .bar.layout.center[]?, .bar.layout.right[]?]
-    | map(select(.id == "io.github.SmoothPixels.glyph-menu"))
+    | map(select(.id == "io.github.smoothpixels.glyph-menu"))
     | first
     | .mark // empty
   ' "$file" 2>/dev/null

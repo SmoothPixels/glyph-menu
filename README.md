@@ -56,7 +56,7 @@ its manifest schema for whenever one exists, no changes will be needed then),
 so configure from the CLI:
 
 ```sh
-omarchy bar set io.github.SmoothPixels.glyph-menu mark pacman
+omarchy bar set io.github.smoothpixels.glyph-menu mark pacman
 ```
 
 | Key | Effect |
@@ -91,7 +91,7 @@ since a plugin silently editing your files on install is exactly what the
 marketplace review checklist asks authors *not* to do. Install it yourself:
 
 ```sh
-~/.config/omarchy/plugins/io.github.SmoothPixels.glyph-menu/tools/install-menu-entries.sh
+~/.config/omarchy/plugins/io.github.smoothpixels.glyph-menu/tools/install-menu-entries.sh
 ```
 
 This splices `extensions/omarchy-menu.snippet.jsonc` into your own
@@ -110,7 +110,7 @@ behind the catalog.
 ## Remove
 
 ```sh
-omarchy plugin remove io.github.SmoothPixels.glyph-menu
+omarchy plugin remove io.github.smoothpixels.glyph-menu
 omarchy bar put omarchy.menu --section left
 ```
 
@@ -130,6 +130,6 @@ node tools/render-preview.js
 Validate before publishing:
 
 ```sh
-omarchy plugin validate ~/.config/omarchy/plugins/io.github.SmoothPixels.glyph-menu
-qmllint -I "$OMARCHY_PATH/shell" ~/.config/omarchy/plugins/io.github.SmoothPixels.glyph-menu/BarWidget.qml
+omarchy plugin validate ~/.config/omarchy/plugins/io.github.smoothpixels.glyph-menu
+qmllint -I "$OMARCHY_PATH/shell" ~/.config/omarchy/plugins/io.github.smoothpixels.glyph-menu/BarWidget.qml
 ```
