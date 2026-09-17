@@ -27,7 +27,7 @@ _(leave blank)_
 
 **Maintainer notes**
 ```
-Replaces omarchy.menu's bar button with a pickable Nerd Font mark (40+
+Replaces omarchy.menu's bar button with a pickable Nerd Font mark (100+
 built-ins or custom text/emoji). Click behaviour is unchanged: left opens
 the Omarchy menu, right opens a terminal, both via the same IPC calls
 omarchy.menu itself uses. No install hooks, no network access, no sudo.

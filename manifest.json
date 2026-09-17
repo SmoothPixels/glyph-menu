@@ -203,6 +203,278 @@
             "label": "  Cloud"
           },
           {
+            "value": "fedora",
+            "label": "  Fedora"
+          },
+          {
+            "value": "debian",
+            "label": "  Debian"
+          },
+          {
+            "value": "mint",
+            "label": "  Linux Mint"
+          },
+          {
+            "value": "manjaro",
+            "label": "  Manjaro"
+          },
+          {
+            "value": "gentoo",
+            "label": "  Gentoo"
+          },
+          {
+            "value": "opensuse",
+            "label": "  openSUSE"
+          },
+          {
+            "value": "redhat",
+            "label": "  Red Hat"
+          },
+          {
+            "value": "centos",
+            "label": "  CentOS"
+          },
+          {
+            "value": "alpine",
+            "label": "  Alpine"
+          },
+          {
+            "value": "void",
+            "label": "  Void"
+          },
+          {
+            "value": "nixos",
+            "label": "  NixOS"
+          },
+          {
+            "value": "elementary",
+            "label": "  elementary OS"
+          },
+          {
+            "value": "popos",
+            "label": "  Pop!_OS"
+          },
+          {
+            "value": "kali",
+            "label": "  Kali Linux"
+          },
+          {
+            "value": "freebsd",
+            "label": "  FreeBSD"
+          },
+          {
+            "value": "android",
+            "label": "  Android"
+          },
+          {
+            "value": "raspberrypi",
+            "label": "  Raspberry Pi"
+          },
+          {
+            "value": "puppy",
+            "label": "  Puppy Linux"
+          },
+          {
+            "value": "slackware",
+            "label": "  Slackware"
+          },
+          {
+            "value": "zorin",
+            "label": "  Zorin OS"
+          },
+          {
+            "value": "endeavour",
+            "label": "  EndeavourOS"
+          },
+          {
+            "value": "artix",
+            "label": "  Artix Linux"
+          },
+          {
+            "value": "vim",
+            "label": "  Vim"
+          },
+          {
+            "value": "neovim",
+            "label": "  Neovim"
+          },
+          {
+            "value": "vscode",
+            "label": "󰨞  VS Code"
+          },
+          {
+            "value": "sublime",
+            "label": "  Sublime Text"
+          },
+          {
+            "value": "docker",
+            "label": "  Docker"
+          },
+          {
+            "value": "npm",
+            "label": "  npm"
+          },
+          {
+            "value": "python",
+            "label": "  Python"
+          },
+          {
+            "value": "javascript",
+            "label": "  JavaScript"
+          },
+          {
+            "value": "react",
+            "label": "  React"
+          },
+          {
+            "value": "nodejs",
+            "label": "  Node.js"
+          },
+          {
+            "value": "rust",
+            "label": "  Rust"
+          },
+          {
+            "value": "go",
+            "label": "  Go"
+          },
+          {
+            "value": "database",
+            "label": "  Database"
+          },
+          {
+            "value": "server",
+            "label": "  Server"
+          },
+          {
+            "value": "keyboard",
+            "label": "  Keyboard"
+          },
+          {
+            "value": "mouse",
+            "label": "  Mouse"
+          },
+          {
+            "value": "gitlab",
+            "label": "  GitLab"
+          },
+          {
+            "value": "bitbucket",
+            "label": "  Bitbucket"
+          },
+          {
+            "value": "tmux",
+            "label": "  Tmux"
+          },
+          {
+            "value": "html5",
+            "label": "  HTML5"
+          },
+          {
+            "value": "css3",
+            "label": "  CSS3"
+          },
+          {
+            "value": "java",
+            "label": "  Java"
+          },
+          {
+            "value": "ruby",
+            "label": "  Ruby"
+          },
+          {
+            "value": "php",
+            "label": "  PHP"
+          },
+          {
+            "value": "dice",
+            "label": "󰝮  Dice"
+          },
+          {
+            "value": "playstation",
+            "label": "  PlayStation"
+          },
+          {
+            "value": "xbox",
+            "label": "  Xbox"
+          },
+          {
+            "value": "steam",
+            "label": "  Steam"
+          },
+          {
+            "value": "nintendo_switch",
+            "label": "󰟡  Switch"
+          },
+          {
+            "value": "controller",
+            "label": "󰖺  Controller"
+          },
+          {
+            "value": "trophy",
+            "label": "  Trophy"
+          },
+          {
+            "value": "sword",
+            "label": "󰓥  Sword"
+          },
+          {
+            "value": "chess",
+            "label": "  Chess"
+          },
+          {
+            "value": "target",
+            "label": "  Target"
+          },
+          {
+            "value": "ninja",
+            "label": "  Ninja"
+          },
+          {
+            "value": "flower",
+            "label": "󰉊  Flower"
+          },
+          {
+            "value": "robot_happy",
+            "label": "󱜙  Happy robot"
+          },
+          {
+            "value": "unicorn",
+            "label": "󱗂  Unicorn"
+          },
+          {
+            "value": "panda",
+            "label": "󰏚  Panda"
+          },
+          {
+            "value": "owl",
+            "label": "󰏒  Owl"
+          },
+          {
+            "value": "spider",
+            "label": "󱇪  Spider"
+          },
+          {
+            "value": "crown",
+            "label": "  Crown"
+          },
+          {
+            "value": "bomb",
+            "label": "  Bomb"
+          },
+          {
+            "value": "yin_yang",
+            "label": "  Yin Yang"
+          },
+          {
+            "value": "peace",
+            "label": "  Peace"
+          },
+          {
+            "value": "mushroom",
+            "label": "󰟟  Mushroom"
+          },
+          {
             "value": "custom",
             "label": "Custom text…"
           }

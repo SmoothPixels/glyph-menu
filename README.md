@@ -4,24 +4,22 @@ A drop-in replacement for the built-in `omarchy.menu` bar button that lets you
 pick the mark it shows instead of the fixed Omarchy glyph. Click behaviour is
 unchanged: left click opens the Omarchy menu, right click opens a terminal.
 
-Choose from 40+ built-in Nerd Font glyphs (distro logos, a Pac-Man, a ghost, a
-dragon, and more), or set any custom text, pasted glyph, or emoji.
+Choose from 100+ built-in Nerd Font glyphs (distro logos, coding tools, gaming
+icons, a Pac-Man, a ghost, a dragon, and more), or set any custom text, pasted
+glyph, or emoji.
 
 ## Available marks
 
 ![Every built-in mark, rendered through the real font](assets/marks.png)
 
 Rendered as an image (not raw glyph characters) so it displays correctly here
-on GitHub even without a Nerd Font installed. Each `mark:` value under an icon
-is what you pass to `omarchy bar set` (see [Settings](#settings)) or select
-from the [menu picker](#optional-a-real-menu-picker):
+on GitHub even without a Nerd Font installed. The `mark:` value printed under
+each icon is what you pass to `omarchy bar set` (see [Settings](#settings)) or
+select from the [menu picker](#optional-a-real-menu-picker). To list them from
+a checkout instead of reading the image:
 
-```
-arch  hyprland  linux  apple  windows  ubuntu  terminal  code  git  github
-pacman  ghost  alien  duck  skull  space_invaders  robot  cat  dragon
-heart  star  rocket  bug  coffee  gamepad  music  camera  bolt  flask
-moon  sun  magic  paw  fire  key  leaf  puzzle  shield  smile  diamond
-anchor  cloud  custom
+```sh
+node -e 'require("./Glyphs.js").glyphs().forEach(g => console.log(g.id))'
 ```
 
 ## Install
