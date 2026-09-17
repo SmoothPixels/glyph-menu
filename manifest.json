@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.SmoothPixels.glyph-menu",
+  "name": "Glyph Menu",
+  "version": "1.0.0",
+  "author": "Jean Alvarado",
+  "license": "MIT",
+  "description": "A pickable Nerd Font mark for the Omarchy menu launcher button, with 40+ built-in glyphs or any custom text.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Glyph Menu",
+    "description": "Pick any Nerd Font glyph as the menu launcher mark, or set custom text. Click behaviour matches the built-in Omarchy menu button.",
+    "category": "Appearance",
+    "allowMultiple": false,
+    "defaultSection": "left",
+    "defaults": {
+      "mark": "arch",
+      "customText": "",
+      "customFont": "",
+      "nerdFont": "",
+      "fontSize": 0,
+      "color": ""
+    },
+    "schema": [
+      {
+        "key": "mark",
+        "type": "enum",
+        "label": "Mark",
+        "description": "The glyph shown on the button. Choose Custom to enter your own text or character below.",
+        "defaultValue": "arch",
+        "options": [
+          {
+            "value": "arch",
+            "label": "  Arch Linux"
+          },
+          {
+            "value": "hyprland",
+            "label": "  Hyprland"
+          },
+          {
+            "value": "linux",
+            "label": "  Linux"
+          },
+          {
+            "value": "apple",
+            "label": "  Apple"
+          },
+          {
+            "value": "windows",
+            "label": "  Windows"
+          },
+          {
+            "value": "ubuntu",
+            "label": "  Ubuntu"
+          },
+          {
+            "value": "terminal",
+            "label": "  Terminal"
+          },
+          {
+            "value": "code",
+            "label": "  Code"
+          },
+          {
+            "value": "git",
+            "label": "  Git"
+          },
+          {
+            "value": "github",
+            "label": "  GitHub"
+          },
+          {
+            "value": "pacman",
+            "label": "󰮯  Pac-Man"
+          },
+          {
+            "value": "ghost",
+            "label": "󰊠  Ghost"
+          },
+          {
+            "value": "alien",
+            "label": "󰢚  Alien"
+          },
+          {
+            "value": "duck",
+            "label": "󰇥  Duck"
+          },
+          {
+            "value": "skull",
+            "label": "󰚌  Skull"
+          },
+          {
+            "value": "space_invaders",
+            "label": "󰯉  Space Invader"
+          },
+          {
+            "value": "robot",
+            "label": "󰚩  Robot"
+          },
+          {
+            "value": "cat",
+            "label": "  Cat"
+          },
+          {
+            "value": "dragon",
+            "label": "  Dragon"
+          },
+          {
+            "value": "heart",
+            "label": "  Heart"
+          },
+          {
+            "value": "star",
+            "label": "  Star"
+          },
+          {
+            "value": "rocket",
+            "label": "  Rocket"
+          },
+          {
+            "value": "bug",
+            "label": "  Bug"
+          },
+          {
+            "value": "coffee",
+            "label": "  Coffee"
+          },
+          {
+            "value": "gamepad",
+            "label": "  Gamepad"
+          },
+          {
+            "value": "music",
+            "label": "  Music"
+          },
+          {
+            "value": "camera",
+            "label": "  Camera"
+          },
+          {
+            "value": "bolt",
+            "label": "  Bolt"
+          },
+          {
+            "value": "flask",
+            "label": "  Flask"
+          },
+          {
+            "value": "moon",
+            "label": "  Moon"
+          },
+          {
+            "value": "sun",
+            "label": "  Sun"
+          },
+          {
+            "value": "magic",
+            "label": "  Magic wand"
+          },
+          {
+            "value": "paw",
+            "label": "  Paw"
+          },
+          {
+            "value": "fire",
+            "label": "  Fire"
+          },
+          {
+            "value": "key",
+            "label": "  Key"
+          },
+          {
+            "value": "leaf",
+            "label": "  Leaf"
+          },
+          {
+            "value": "puzzle",
+            "label": "  Puzzle piece"
+          },
+          {
+            "value": "shield",
+            "label": "  Shield"
+          },
+          {
+            "value": "smile",
+            "label": "  Smile"
+          },
+          {
+            "value": "diamond",
+            "label": "  Diamond"
+          },
+          {
+            "value": "anchor",
+            "label": "  Anchor"
+          },
+          {
+            "value": "cloud",
+            "label": "  Cloud"
+          },
+          {
+            "value": "custom",
+            "label": "Custom text…"
+          }
+        ]
+      },
+      {
+        "key": "customText",
+        "type": "string",
+        "label": "Custom text",
+        "description": "Used when Mark is set to Custom. Any text, pasted glyph, or emoji.",
+        "defaultValue": ""
+      },
+      {
+        "key": "customFont",
+        "type": "string",
+        "label": "Custom font",
+        "description": "Font family for the custom mark. Empty falls back to Nerd font below.",
+        "defaultValue": ""
+      },
+      {
+        "key": "nerdFont",
+        "type": "string",
+        "label": "Nerd font",
+        "description": "Font family the built-in marks are drawn in. Empty follows the bar's own font.",
+        "defaultValue": ""
+      },
+      {
+        "key": "fontSize",
+        "type": "integer",
+        "label": "Font size",
+        "description": "Pixel size of the mark. 0 follows the bar's size.",
+        "defaultValue": 0,
+        "min": 0,
+        "max": 48,
+        "step": 1
+      },
+      {
+        "key": "color",
+        "type": "string",
+        "label": "Color",
+        "description": "Empty follows the active theme. Use \"accent\", or a #rrggbb hex value.",
+        "defaultValue": ""
+      }
+    ]
+  }
+}
