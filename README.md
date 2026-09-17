@@ -89,10 +89,17 @@ marketplace review checklist asks authors *not* to do. Install it yourself:
 ```
 
 This splices `extensions/omarchy-menu.snippet.jsonc` into your own
-`~/.config/omarchy/extensions/omarchy-menu.jsonc` (creating it if missing,
-skipping if already installed). The shell watches that file, so it applies
-within a second or two, no restart needed. To remove it later, delete the
-`"style.bar.glyph"` block from that file by hand.
+`~/.config/omarchy/extensions/omarchy-menu.jsonc` (creating it if missing).
+The shell watches that file, so it applies within a second or two, no restart
+needed. To remove it later, delete the `"style.bar.glyph"` block from that
+file by hand.
+
+**Re-run this script after `omarchy plugin update`** if you want new glyphs
+to show up in the menu: it resyncs (replaces its own rows, leaves everything
+else in your extensions file alone) rather than skip because it's already
+there, but only when you run it. `omarchy plugin update` only updates the
+plugin's own files, not your menu config, so the menu can otherwise lag
+behind the catalog.
 
 ## Remove
 
