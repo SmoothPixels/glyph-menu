@@ -387,6 +387,22 @@
             "label": "  PHP"
           },
           {
+            "value": "jenkins",
+            "label": "  Jenkins"
+          },
+          {
+            "value": "jquery",
+            "label": "  jQuery"
+          },
+          {
+            "value": "jira",
+            "label": "  Jira"
+          },
+          {
+            "value": "julia",
+            "label": "  Julia"
+          },
+          {
             "value": "dice",
             "label": "󰝮  Dice"
           },

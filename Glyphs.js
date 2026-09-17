@@ -103,6 +103,10 @@ function glyphs() {
     { id: "java", label: "Java", code: "e738", set: "dev" },
     { id: "ruby", label: "Ruby", code: "e739", set: "dev" },
     { id: "php", label: "PHP", code: "e73d", set: "dev" },
+    { id: "jenkins", label: "Jenkins", code: "e767", set: "dev" },
+    { id: "jquery", label: "jQuery", code: "e750", set: "dev" },
+    { id: "jira", label: "Jira", code: "e75c", set: "dev" },
+    { id: "julia", label: "Julia", code: "e80d", set: "dev" },
 
     // Gaming
     { id: "dice", label: "Dice", code: "f076e", set: "md" },
