@@ -2,7 +2,7 @@
 // { id, label, code, set }: `id` is the enum value stored in settings,
 // `label` is shown in the marketplace/README, `code` is the Nerd Font
 // codepoint as a hex string, `set` is the Nerd Fonts icon set it comes
-// from (for reference only — the shell just needs the codepoint).
+// from (for reference only; the shell just needs the codepoint).
 //
 // Codepoints are copied straight from the Nerd Fonts project's
 // glyphnames.json (the data behind nerdfonts.com/cheat-sheet), not

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Renders assets/marks.svg (-> marks.png) — a grid of every built-in glyph,
+// Renders assets/marks.svg (-> marks.png), a grid of every built-in glyph,
 // rendered through the real font so it displays correctly on GitHub
 // regardless of whether the viewer has a Nerd Font installed. Regenerate
 // after editing Glyphs.js:
@@ -46,7 +46,7 @@ const cells = list.map((g, i) => {
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">
   <rect width="${width}" height="${height}" fill="#1e1e2e"/>
-  <text x="${PAD}" y="${PAD + 26}" font-family="sans-serif" font-size="22" fill="#e6e6e6">Glyph Menu — built-in marks</text>
+  <text x="${PAD}" y="${PAD + 26}" font-family="sans-serif" font-size="22" fill="#e6e6e6">Glyph Menu: built-in marks</text>
   <text x="${width - PAD}" y="${PAD + 26}" text-anchor="end" font-family="monospace" font-size="13" fill="#7a7a7a">+ custom text/emoji</text>
   ${cells}
 </svg>

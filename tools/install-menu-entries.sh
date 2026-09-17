@@ -10,7 +10,7 @@ SNIPPET="$PLUGIN_DIR/extensions/omarchy-menu.snippet.jsonc"
 TARGET="$HOME/.config/omarchy/extensions/omarchy-menu.jsonc"
 MARKER='"style.bar.glyph"'
 
-[[ -f $SNIPPET ]] || { echo "Missing $SNIPPET — run tools/sync-menu.js first." >&2; exit 1; }
+[[ -f $SNIPPET ]] || { echo "Missing $SNIPPET, run tools/sync-menu.js first." >&2; exit 1; }
 
 mkdir -p "$(dirname "$TARGET")"
 if [[ ! -f $TARGET ]]; then
