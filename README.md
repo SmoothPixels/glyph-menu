@@ -30,7 +30,9 @@ omarchy-shell shell rescanPlugins
 
 ## Settings
 
-Configure from Setup → Bar → Glyph Menu, or from the CLI:
+There's no graphical settings form for bar widgets in Omarchy yet (this ships
+its manifest schema for whenever one exists — no changes will be needed then),
+so configure from the CLI:
 
 ```sh
 omarchy bar set io.github.SmoothPixels.glyph-menu mark pacman
@@ -49,6 +51,31 @@ Marks are single-colour text glyphs, so they follow the theme (or a fixed
 color/accent you choose) — there's no multicolour distro logo option, the same
 tradeoff every Nerd Font icon in the bar already makes.
 
+If a change doesn't seem to take (rare, seen after `omarchy plugin update`
+specifically): check `~/.config/omarchy/shell.json` — if it already shows the
+new value but the bar hasn't caught up, run `omarchy-restart-shell` rather
+than repeating the `bar set` command.
+
+### Optional: a real menu picker
+
+`omarchy bar set` is a command, not a picker. If you'd rather click through a
+menu, this ships a ready-made "Style → Menu Bar → Glyph Mark" submenu — one
+checkable row per glyph, using the Omarchy menu's own icon column (so it
+genuinely shows icons, unlike a settings-form dropdown). It's opt-in: nothing
+in this plugin writes to your menu config on its own — a plugin silently
+editing your files on install is exactly what the marketplace review
+checklist asks authors *not* to do. Install it yourself:
+
+```sh
+~/.config/omarchy/plugins/io.github.SmoothPixels.glyph-menu/tools/install-menu-entries.sh
+```
+
+This splices `extensions/omarchy-menu.snippet.jsonc` into your own
+`~/.config/omarchy/extensions/omarchy-menu.jsonc` (creating it if missing,
+skipping if already installed). The shell watches that file, so it applies
+within a second or two — no restart needed. To remove it later, delete the
+`"style.bar.glyph"` block from that file by hand.
+
 ## Remove
 
 ```sh
@@ -59,10 +86,12 @@ omarchy bar put omarchy.menu --section left
 ## Development
 
 `Glyphs.js` is the single source of truth for the built-in mark catalog. After
-editing it, regenerate the manifest's dropdown options:
+editing it, regenerate both the manifest's dropdown options and the optional
+menu snippet:
 
 ```sh
 node tools/sync-manifest.js
+node tools/sync-menu.js
 ```
 
 Validate before publishing:
