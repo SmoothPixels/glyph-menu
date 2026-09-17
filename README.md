@@ -7,6 +7,23 @@ unchanged: left click opens the Omarchy menu, right click opens a terminal.
 Choose from 40+ built-in Nerd Font glyphs (distro logos, a Pac-Man, a ghost, a
 dragon, and more), or set any custom text, pasted glyph, or emoji.
 
+## Available marks
+
+![Every built-in mark, rendered through the real font](assets/marks.png)
+
+Rendered as an image (not raw glyph characters) so it displays correctly here
+on GitHub even without a Nerd Font installed. Each `mark:` value under an icon
+is what you pass to `omarchy bar set` (see [Settings](#settings)) or select
+from the [menu picker](#optional-a-real-menu-picker):
+
+```
+arch  hyprland  linux  apple  windows  ubuntu  terminal  code  git  github
+pacman  ghost  alien  duck  skull  space_invaders  robot  cat  dragon
+heart  star  rocket  bug  coffee  gamepad  music  camera  bolt  flask
+moon  sun  magic  paw  fire  key  leaf  puzzle  shield  smile  diamond
+anchor  cloud  custom
+```
+
 ## Install
 
 ```sh
@@ -61,7 +78,11 @@ than repeating the `bar set` command.
 `omarchy bar set` is a command, not a picker. If you'd rather click through a
 menu, this ships a ready-made "Style → Menu Bar → Glyph Mark" submenu — one
 checkable row per glyph, using the Omarchy menu's own icon column (so it
-genuinely shows icons, unlike a settings-form dropdown). It's opt-in: nothing
+genuinely shows icons, unlike a settings-form dropdown):
+
+![Style > Menu Bar > Glyph Mark submenu, with Arch Linux checked](assets/menu-picker.png)
+
+It's opt-in: nothing
 in this plugin writes to your menu config on its own — a plugin silently
 editing your files on install is exactly what the marketplace review
 checklist asks authors *not* to do. Install it yourself:
@@ -86,12 +107,14 @@ omarchy bar put omarchy.menu --section left
 ## Development
 
 `Glyphs.js` is the single source of truth for the built-in mark catalog. After
-editing it, regenerate both the manifest's dropdown options and the optional
-menu snippet:
+editing it, regenerate the manifest's dropdown options, the optional menu
+snippet, and the `assets/marks.png` preview (needs `rsvg-convert`, from
+`librsvg`):
 
 ```sh
 node tools/sync-manifest.js
 node tools/sync-menu.js
+node tools/render-preview.js
 ```
 
 Validate before publishing:
