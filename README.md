@@ -4,9 +4,9 @@ A drop-in replacement for the built-in `omarchy.menu` bar button that lets you
 pick the mark it shows instead of the fixed Omarchy glyph. Click behaviour is
 unchanged: left click opens the Omarchy menu, right click opens a terminal.
 
-Choose from 100+ built-in Nerd Font glyphs (distro logos, coding tools, gaming
-icons, a Pac-Man, a ghost, a dragon, and more), or set any custom text, pasted
-glyph, or emoji.
+Choose from 130+ built-in Nerd Font glyphs (distro logos, coding tools, gaming
+icons, animals, a Pac-Man, a ghost, a dragon, and more), or set any custom
+text, pasted glyph, or emoji.
 
 ## Available marks
 

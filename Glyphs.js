@@ -128,7 +128,30 @@ function glyphs() {
     { id: "bomb", label: "Bomb", code: "f1e2", set: "fa" },
     { id: "yin_yang", label: "Yin Yang", code: "eee9", set: "fa" },
     { id: "peace", label: "Peace", code: "eed6", set: "fa" },
-    { id: "mushroom", label: "Mushroom", code: "f07df", set: "md" }
+    { id: "mushroom", label: "Mushroom", code: "f07df", set: "md" },
+
+    // More animals
+    { id: "dog", label: "Dog", code: "f0a43", set: "md" },
+    { id: "elephant", label: "Elephant", code: "f07c6", set: "md" },
+    { id: "snake", label: "Snake", code: "f150e", set: "md" },
+    { id: "fish", label: "Fish", code: "f023a", set: "md" },
+    { id: "bird", label: "Bird", code: "f15c6", set: "md" },
+    { id: "rabbit", label: "Rabbit", code: "f0907", set: "md" },
+    { id: "bear", label: "Bear", code: "f18fb", set: "md" },
+    { id: "koala", label: "Koala", code: "f173f", set: "md" },
+    { id: "kangaroo", label: "Kangaroo", code: "f1558", set: "md" },
+    { id: "penguin", label: "Penguin", code: "f0ec0", set: "md" },
+    { id: "turtle", label: "Turtle", code: "f0cd7", set: "md" },
+    { id: "butterfly", label: "Butterfly", code: "f1589", set: "md" },
+    { id: "bee", label: "Bee", code: "f0fa1", set: "md" },
+    { id: "horse", label: "Horse", code: "f15bf", set: "md" },
+    { id: "cow", label: "Cow", code: "f019a", set: "md" },
+    { id: "pig", label: "Pig", code: "f0401", set: "md" },
+    { id: "sheep", label: "Sheep", code: "f0cc6", set: "md" },
+    { id: "shark", label: "Shark", code: "f18ba", set: "md" },
+    { id: "bat", label: "Bat", code: "f0b5f", set: "md" },
+    { id: "snail", label: "Snail", code: "f1677", set: "md" },
+    { id: "spider_web", label: "Spider web", code: "f0bca", set: "md" }
   ]
 }
 

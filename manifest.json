@@ -475,6 +475,90 @@
             "label": "󰟟  Mushroom"
           },
           {
+            "value": "dog",
+            "label": "󰩃  Dog"
+          },
+          {
+            "value": "elephant",
+            "label": "󰟆  Elephant"
+          },
+          {
+            "value": "snake",
+            "label": "󱔎  Snake"
+          },
+          {
+            "value": "fish",
+            "label": "󰈺  Fish"
+          },
+          {
+            "value": "bird",
+            "label": "󱗆  Bird"
+          },
+          {
+            "value": "rabbit",
+            "label": "󰤇  Rabbit"
+          },
+          {
+            "value": "bear",
+            "label": "󱣻  Bear"
+          },
+          {
+            "value": "koala",
+            "label": "󱜿  Koala"
+          },
+          {
+            "value": "kangaroo",
+            "label": "󱕘  Kangaroo"
+          },
+          {
+            "value": "penguin",
+            "label": "󰻀  Penguin"
+          },
+          {
+            "value": "turtle",
+            "label": "󰳗  Turtle"
+          },
+          {
+            "value": "butterfly",
+            "label": "󱖉  Butterfly"
+          },
+          {
+            "value": "bee",
+            "label": "󰾡  Bee"
+          },
+          {
+            "value": "horse",
+            "label": "󱖿  Horse"
+          },
+          {
+            "value": "cow",
+            "label": "󰆚  Cow"
+          },
+          {
+            "value": "pig",
+            "label": "󰐁  Pig"
+          },
+          {
+            "value": "sheep",
+            "label": "󰳆  Sheep"
+          },
+          {
+            "value": "shark",
+            "label": "󱢺  Shark"
+          },
+          {
+            "value": "bat",
+            "label": "󰭟  Bat"
+          },
+          {
+            "value": "snail",
+            "label": "󱙷  Snail"
+          },
+          {
+            "value": "spider_web",
+            "label": "󰯊  Spider web"
+          },
+          {
             "value": "custom",
             "label": "Custom text…"
           }
