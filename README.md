@@ -11,7 +11,21 @@ dragon, and more), or set any custom text, pasted glyph, or emoji.
 
 ```sh
 omarchy plugin add https://github.com/SmoothPixels/glyph-menu.git --enable
-omarchy plugin disable omarchy.menu
+```
+
+Then drop `omarchy.menu`'s own button from the bar — but **do not**
+`omarchy plugin disable omarchy.menu`. That plugin provides both the button
+(`bar-widget` kind) and the menu popup itself (`menu` kind); disabling it
+turns off both, and this plugin's click handler opens the popup by calling
+back into that same `menu` kind. Instead, leave it enabled and just remove
+its layout entry so only its popup (loaded on demand, independent of the bar
+layout) survives:
+
+```sh
+jq -c '(.bar.layout.left, .bar.layout.center, .bar.layout.right) |=
+  map(select(.id != "omarchy.menu"))' ~/.config/omarchy/shell.json \
+  > /tmp/shell.json.new && mv /tmp/shell.json.new ~/.config/omarchy/shell.json
+omarchy-shell shell rescanPlugins
 ```
 
 ## Settings
@@ -39,7 +53,7 @@ tradeoff every Nerd Font icon in the bar already makes.
 
 ```sh
 omarchy plugin remove io.github.SmoothPixels.glyph-menu
-omarchy plugin enable omarchy.menu
+omarchy bar put omarchy.menu --section left
 ```
 
 ## Development
