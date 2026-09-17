@@ -4,9 +4,15 @@ A drop-in replacement for the built-in `omarchy.menu` bar button that lets you
 pick the mark it shows instead of the fixed Omarchy glyph. Click behaviour is
 unchanged: left click opens the Omarchy menu, right click opens a terminal.
 
-Choose from 130+ built-in Nerd Font glyphs (distro logos, coding tools, gaming
+Choose from 140+ built-in Nerd Font glyphs (distro logos, coding tools, gaming
 icons, animals, a Pac-Man, a ghost, a dragon, and more), or set any custom
 text, pasted glyph, or emoji.
+
+No runtime dependencies beyond Omarchy itself and a Nerd Font (already part
+of a standard Omarchy install): no network access, no install hooks, no sudo.
+The dev tooling under `tools/` (for regenerating the catalog) additionally
+needs Node.js and `rsvg-convert` (from `librsvg`), neither of which is needed
+to install or use the plugin.
 
 ## Available marks
 

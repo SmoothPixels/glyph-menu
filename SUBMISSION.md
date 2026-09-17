@@ -27,13 +27,22 @@ _(leave blank)_
 
 **Maintainer notes**
 ```
-Replaces omarchy.menu's bar button with a pickable Nerd Font mark (100+
+Replaces omarchy.menu's bar button with a pickable Nerd Font mark (140+
 built-ins or custom text/emoji). Click behaviour is unchanged: left opens
 the Omarchy menu, right opens a terminal, both via the same IPC calls
-omarchy.menu itself uses. No install hooks, no network access, no sudo.
-omarchy.menu must stay enabled (its popup is a separate kind of the same
-plugin this button calls into); installing and removing this plugin only
-adds/removes omarchy.menu's own bar entry, both covered in the README.
+omarchy.menu itself uses. No install hooks, no network access, no sudo,
+no runtime dependencies beyond Omarchy itself.
+
+omarchy.menu must stay enabled: its popup is a separate kind of the same
+plugin this button calls into, so disabling it would break the click
+handler. The README has the manual command to remove omarchy.menu's own
+bar entry (leaving the plugin enabled) and the command to restore it.
+
+Also ships an optional "Style > Menu Bar > Glyph Mark" submenu (a real
+point-and-click picker, since there's no settings-form GUI yet). It is
+opt-in only: a bundled script the user runs themselves splices it into
+their own extensions/omarchy-menu.jsonc. Nothing runs automatically on
+install.
 ```
 
 **Submission checklist**
