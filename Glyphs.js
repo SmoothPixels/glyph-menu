@@ -108,6 +108,13 @@ function glyphs() {
     { id: "jira", label: "Jira", code: "e75c", set: "dev" },
     { id: "julia", label: "Julia", code: "e80d", set: "dev" },
 
+    // Letter J (monogram styles)
+    { id: "letter_j", label: "J", code: "f0af7", set: "md" },
+    { id: "letter_j_box", label: "J (box)", code: "f0b11", set: "md" },
+    { id: "letter_j_box_outline", label: "J (box outline)", code: "f0c06", set: "md" },
+    { id: "letter_j_circle", label: "J (circle)", code: "f0c07", set: "md" },
+    { id: "letter_j_circle_outline", label: "J (circle outline)", code: "f0c08", set: "md" },
+
     // Gaming
     { id: "dice", label: "Dice", code: "f076e", set: "md" },
     { id: "playstation", label: "PlayStation", code: "ed18", set: "fa" },

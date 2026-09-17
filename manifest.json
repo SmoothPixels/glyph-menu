@@ -403,6 +403,26 @@
             "label": "  Julia"
           },
           {
+            "value": "letter_j",
+            "label": "󰫷  J"
+          },
+          {
+            "value": "letter_j_box",
+            "label": "󰬑  J (box)"
+          },
+          {
+            "value": "letter_j_box_outline",
+            "label": "󰰆  J (box outline)"
+          },
+          {
+            "value": "letter_j_circle",
+            "label": "󰰇  J (circle)"
+          },
+          {
+            "value": "letter_j_circle_outline",
+            "label": "󰰈  J (circle outline)"
+          },
+          {
             "value": "dice",
             "label": "󰝮  Dice"
           },
