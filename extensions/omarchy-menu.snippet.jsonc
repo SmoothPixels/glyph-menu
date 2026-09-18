@@ -5,6 +5,7 @@
 // Install with tools/install-menu-entries.sh, which splices them into
 // ~/.config/omarchy/extensions/omarchy-menu.jsonc.
   "style.bar.glyph": {"icon":"\uf03e","label":"Glyph Mark","description":"Pick the icon shown by the Glyph Menu plugin"},
+  "style.bar.glyph.omarchy": {"icon":"","iconFont":"omarchy","label":"Omarchy","checked":"[[ \"$($HOME/.config/omarchy/plugins/io.github.smoothpixels.glyph-menu/tools/current-mark.sh)\" == \"omarchy\" ]]","action":"omarchy bar set io.github.smoothpixels.glyph-menu mark omarchy"},
   "style.bar.glyph.arch": {"icon":"","label":"Arch Linux","checked":"[[ \"$($HOME/.config/omarchy/plugins/io.github.smoothpixels.glyph-menu/tools/current-mark.sh)\" == \"arch\" ]]","action":"omarchy bar set io.github.smoothpixels.glyph-menu mark arch"},
   "style.bar.glyph.hyprland": {"icon":"","label":"Hyprland","checked":"[[ \"$($HOME/.config/omarchy/plugins/io.github.smoothpixels.glyph-menu/tools/current-mark.sh)\" == \"hyprland\" ]]","action":"omarchy bar set io.github.smoothpixels.glyph-menu mark hyprland"},
   "style.bar.glyph.linux": {"icon":"","label":"Linux","checked":"[[ \"$($HOME/.config/omarchy/plugins/io.github.smoothpixels.glyph-menu/tools/current-mark.sh)\" == \"linux\" ]]","action":"omarchy bar set io.github.smoothpixels.glyph-menu mark linux"},

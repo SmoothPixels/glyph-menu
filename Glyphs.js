@@ -1,8 +1,15 @@
 // Single source of truth for every built-in mark. Each entry is
-// { id, label, code, set }: `id` is the enum value stored in settings,
-// `label` is shown in the marketplace/README, `code` is the Nerd Font
-// codepoint as a hex string, `set` is the Nerd Fonts icon set it comes
-// from (for reference only; the shell just needs the codepoint).
+// { id, label, code, set, font? }: `id` is the enum value stored in
+// settings, `label` is shown in the marketplace/README, `code` is the
+// glyph's codepoint as a hex string, `set` is the icon set it comes from
+// (for reference only; the shell just needs the codepoint). `font` is
+// optional and only needed when a glyph does NOT live in a Nerd Font: it
+// names the font family that codepoint actually renders in, and overrides
+// the `nerdFont` setting for that one entry (see BarWidget.qml). Every
+// entry below is a Nerd Fonts codepoint except "omarchy", which is
+// Omarchy's own private-use glyph from the `omarchy` font it installs
+// itself (/usr/share/fonts/omarchy/omarchy.ttf) — the same mark and font
+// the stock omarchy.menu bar button uses.
 //
 // Codepoints are copied straight from the Nerd Fonts project's
 // glyphnames.json (the data behind nerdfonts.com/cheat-sheet), not
@@ -11,6 +18,7 @@
 // after editing this file to regenerate the manifest's enum options.
 function glyphs() {
   return [
+    { id: "omarchy", label: "Omarchy", code: "e900", set: "omarchy", font: "omarchy" },
     { id: "arch", label: "Arch Linux", code: "e732", set: "dev" },
     { id: "hyprland", label: "Hyprland", code: "f359", set: "linux" },
     { id: "linux", label: "Linux", code: "f17c", set: "fa" },

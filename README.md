@@ -4,9 +4,9 @@ A drop-in replacement for the built-in `omarchy.menu` bar button that lets you
 pick the mark it shows instead of the fixed Omarchy glyph. Click behaviour is
 unchanged: left click opens the Omarchy menu, right click opens a terminal.
 
-Choose from 140+ built-in Nerd Font glyphs (distro logos, coding tools, gaming
-icons, animals, a Pac-Man, a ghost, a dragon, and more), or set any custom
-text, pasted glyph, or emoji.
+Choose from 141+ built-in glyphs — mostly Nerd Font icons (distro logos,
+coding tools, gaming icons, animals, a Pac-Man, a ghost, a dragon, and more),
+plus Omarchy's own mark — or set any custom text, pasted glyph, or emoji.
 
 No runtime dependencies beyond Omarchy itself and a Nerd Font (already part
 of a standard Omarchy install): no network access, no install hooks, no sudo.
@@ -64,7 +64,7 @@ omarchy bar set io.github.smoothpixels.glyph-menu mark pacman
 | `mark` | The glyph. Set to `custom` to use `customText` instead. |
 | `customText` | Any text or character: a pasted glyph, an emoji, a word. |
 | `customFont` | Font family for the custom mark. Empty falls back to `nerdFont`. |
-| `nerdFont` | Font family the built-in marks are drawn in. Empty follows the bar's own font. |
+| `nerdFont` | Font family the built-in Nerd Font marks are drawn in. Empty follows the bar's own font. Ignored by the Omarchy mark, which always uses Omarchy's own font so it renders correctly. |
 | `fontSize` | Pixel size. `0` follows the bar. |
 | `color` | Empty follows the active theme. `accent`, or a `#rrggbb` hex value. |
 

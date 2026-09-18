@@ -38,8 +38,9 @@ const cells = list.map((g, i) => {
   const cx = PAD + col * CELL_W + CELL_W / 2
   const cy = TITLE_H + PAD + row * CELL_H
   const glyph = String.fromCodePoint(parseInt(g.code, 16))
+  const cellFont = g.font || FONT
   return `
-  <text x="${cx}" y="${cy + 46}" text-anchor="middle" font-family="${FONT}" font-size="38" fill="#e6e6e6">${esc(glyph)}</text>
+  <text x="${cx}" y="${cy + 46}" text-anchor="middle" font-family="${cellFont}" font-size="38" fill="#e6e6e6">${esc(glyph)}</text>
   <text x="${cx}" y="${cy + 76}" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#9a9a9a">${esc(g.label)}</text>
   <text x="${cx}" y="${cy + 92}" text-anchor="middle" font-family="monospace" font-size="11" fill="#5a5a5a">mark: ${esc(g.id)}</text>`
 }).join("\n")

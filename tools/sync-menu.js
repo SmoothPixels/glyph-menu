@@ -33,7 +33,11 @@ lines.push('  "style.bar.glyph": {"icon":"\\uf03e","label":"Glyph Mark","descrip
 
 for (const g of glyphs()) {
   const icon = String.fromCodePoint(parseInt(g.code, 16))
-  const line = `  "style.bar.glyph.${g.id}": {"icon":${jsonString(icon)},"label":${jsonString(g.label)},"checked":${checkedFor(g.id)},"action":${jsonString(`omarchy bar set ${PLUGIN_ID} mark ${g.id}`)}},`
+  // Glyphs outside a Nerd Font (currently only "omarchy") need their own
+  // iconFont so the row renders through the font that actually has the
+  // codepoint, instead of the menu's own font family.
+  const iconFont = g.font ? `,"iconFont":${jsonString(g.font)}` : ""
+  const line = `  "style.bar.glyph.${g.id}": {"icon":${jsonString(icon)}${iconFont},"label":${jsonString(g.label)},"checked":${checkedFor(g.id)},"action":${jsonString(`omarchy bar set ${PLUGIN_ID} mark ${g.id}`)}},`
   lines.push(line)
 }
 

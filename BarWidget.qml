@@ -18,7 +18,16 @@ BarWidget {
   readonly property bool isCustom: markId === "custom"
   readonly property string markText: isCustom ? customText : (markEntry ? Glyphs.glyphChar(markEntry.code) : "")
   readonly property string markFontFamily: {
-    if (isCustom && customFont !== "") return customFont
+    if (isCustom) {
+      if (customFont !== "") return customFont
+      if (nerdFont !== "") return nerdFont
+      return root.bar ? root.bar.fontFamily : Style.font.family
+    }
+    // A glyph's own `font` (set only for marks that don't live in a Nerd
+    // Font, e.g. "omarchy") always wins: it names the one family that
+    // actually contains that codepoint, so letting `nerdFont` override it
+    // would just swap a real glyph for a tofu box.
+    if (markEntry && markEntry.font) return markEntry.font
     if (nerdFont !== "") return nerdFont
     return root.bar ? root.bar.fontFamily : Style.font.family
   }
