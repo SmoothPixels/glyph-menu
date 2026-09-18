@@ -8,7 +8,7 @@
 // the `nerdFont` setting for that one entry (see BarWidget.qml). Every
 // entry below is a Nerd Fonts codepoint except "omarchy", which is
 // Omarchy's own private-use glyph from the `omarchy` font it installs
-// itself (/usr/share/fonts/omarchy/omarchy.ttf) — the same mark and font
+// itself (/usr/share/fonts/omarchy/omarchy.ttf), the same mark and font
 // the stock omarchy.menu bar button uses.
 //
 // Codepoints are copied straight from the Nerd Fonts project's
