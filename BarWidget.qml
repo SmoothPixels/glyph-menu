@@ -45,15 +45,32 @@ BarWidget {
     id: button
     anchors.fill: parent
     bar: root.bar
-    text: root.markText
-    fontFamily: root.markFontFamily
-    fontSize: root.markFontSize
-    foreground: root.markColor
+    // The mark is drawn by `mark` below, not by WidgetButton's own label:
+    // customText is user input, and older shells leave that label on Qt's
+    // default AutoText, which would sniff it for rich text. The button only
+    // handles clicks and sizing, and is sized from `mark`.
+    labelVisible: false
+    hasVisualContent: root.markText !== ""
     horizontalMargin: 7.5
+    fixedWidth: button.vertical ? -1 : Math.max(12, mark.implicitWidth + button.scaledHorizontalMargin * 2)
+    fixedHeight: button.vertical ? Math.max(12, mark.implicitHeight + button.scaledVerticalPadding * 2) : -1
     onPressed: function(button) {
       if (!root.bar) return
       if (button === Qt.RightButton) root.bar.run("xdg-terminal-exec")
       else root.bar.run("omarchy-shell shell toggle omarchy.menu '{\"menu\":\"root\"}'")
+    }
+
+    Text {
+      id: mark
+      anchors.centerIn: parent
+      textFormat: Text.PlainText
+      text: root.markText
+      color: root.markColor
+      font.family: root.markFontFamily
+      font.pixelSize: root.markFontSize
+      renderType: Text.NativeRendering
+      horizontalAlignment: Text.AlignHCenter
+      verticalAlignment: Text.AlignVCenter
     }
   }
 }
