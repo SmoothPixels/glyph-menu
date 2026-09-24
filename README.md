@@ -81,31 +81,31 @@ than repeating the `bar set` command.
 
 `omarchy bar set` is a command, not a picker. If you'd rather click through a
 menu, this ships a ready-made "Style → Menu Bar → Glyph Mark" submenu: one
-checkable row per glyph, using the Omarchy menu's own icon column (so it
+row per glyph, using the Omarchy menu's own icon column (so it
 genuinely shows icons, unlike a settings-form dropdown):
 
-![Style > Menu Bar > Glyph Mark submenu, with Arch Linux checked](assets/menu-picker.png)
+![Style > Menu Bar > Glyph Mark submenu](assets/menu-picker.png)
 
-It's opt-in: nothing in this plugin writes to your menu config on its own,
-since a plugin silently editing your files on install is exactly what the
-marketplace review checklist asks authors *not* to do. Install it yourself:
+It's opt-in, and nothing in this plugin writes to your menu config: you add
+it yourself. Open (or create) `~/.config/omarchy/extensions/omarchy-menu.jsonc`
+and paste every `"style.bar.glyph…"` line from
+`~/.config/omarchy/plugins/io.github.smoothpixels.glyph-menu/extensions/omarchy-menu.snippet.jsonc`
+right after its opening `{` (each line ends in a comma, so they can go ahead
+of anything already there). If the file is new, it's just:
 
-```sh
-~/.config/omarchy/plugins/io.github.smoothpixels.glyph-menu/tools/install-menu-entries.sh
+```jsonc
+{
+  // paste the "style.bar.glyph…" lines here
+}
 ```
 
-This splices `extensions/omarchy-menu.snippet.jsonc` into your own
-`~/.config/omarchy/extensions/omarchy-menu.jsonc` (creating it if missing).
 The shell watches that file, so it applies within a second or two, no restart
-needed. To remove it later, delete the `"style.bar.glyph"` block from that
-file by hand.
+needed. To remove it later, delete the `"style.bar.glyph…"` lines again.
 
-**Re-run this script after `omarchy plugin update`** if you want new glyphs
-to show up in the menu: it resyncs (replaces its own rows, leaves everything
-else in your extensions file alone) rather than skip because it's already
-there, but only when you run it. `omarchy plugin update` only updates the
-plugin's own files, not your menu config, so the menu can otherwise lag
-behind the catalog.
+**Repeat the paste after `omarchy plugin update`** if you want new glyphs to
+show up in the menu: delete your old `"style.bar.glyph…"` lines and paste the
+current ones. `omarchy plugin update` only updates the plugin's own files, not
+your menu config, so the menu can otherwise lag behind the catalog.
 
 ## Remove
 

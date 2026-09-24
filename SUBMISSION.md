@@ -41,9 +41,8 @@ bar entry (leaving the plugin enabled) and the command to restore it.
 
 Also ships an optional "Style > Menu Bar > Glyph Mark" submenu (a real
 point-and-click picker, since there's no settings-form GUI yet). It is
-opt-in only: a bundled script the user runs themselves splices it into
-their own extensions/omarchy-menu.jsonc. Nothing runs automatically on
-install.
+opt-in only: the user pastes a bundled snippet into their own
+extensions/omarchy-menu.jsonc by hand. The plugin never writes to it.
 ```
 
 **Submission checklist**
