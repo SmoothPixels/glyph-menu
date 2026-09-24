@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "io.github.smoothpixels.glyph-menu",
   "name": "Glyph Menu",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Jean Alvarado",
   "license": "MIT",
   "description": "A pickable mark for the Omarchy menu launcher button: 141+ built-in glyphs (Nerd Font icons plus Omarchy's own mark) or any custom text.",
